@@ -1,0 +1,8 @@
+create TABLE t_user (
+  id BIGINT(20) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(64) NOT NULL,
+  description VARCHAR(128) NOT NULL,
+  create_time DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+  PRIMARY KEY (id),
+  UNIQUE KEY uk_name (name)
+)ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
